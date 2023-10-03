@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Form Validator</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <form action="/my-handling-form-page" method="post" class="form-modal">
+    <h1>Register With Us</h1>
+    <ul>
+      <li>
+        <label for="username">Username</label>
+        <input id="username" name="username" type="text" placeholder="Enter username"/>
+      </li>
+      <li>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="Enter email"/>
+      </li>
+      <li>
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" placeholder="Enter password"/>
+      </li>
+      <li>
+        <label for="confirm-password">Confirm Password</label>
+        <input id="confirm-password" name="confirm-password" type="password" placeholder="Enter password again"/>
+      </li>
+      <li>
+        <button type="submit">Submit</button>
+      </li>
+    </ul>
+  </form>
+  <script src="script.js"></script>
+</body>
+
+</html>
