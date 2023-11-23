@@ -8,11 +8,13 @@
     --form-border-radius: 5px;
     --form-color: rgb(119, 119, 119);
     --form-input-padding: 10px;
-    --form-item-gap: 30px;
+    --form-item-gap: 15px;
     --form-input-border-color: #f0f0f0;
     --form-submit-bg-color: #3498db;
     --form-submit-color: white;
     --form-border-style: 2px solid;
+    --form-error-color: #e74c3c;
+    --form-success-color: #2ecc71;
 }
 
 h1, ul {
@@ -77,10 +79,29 @@ form li input:focus {
     outline: none;
 }
 
+form li input.error {
+    border-color: var(--form-error-color);
+}
+
+form li input.success {
+    border-color: var(--form-success-color);
+}
+
 form button[type=submit]  {
     background-color: var(--form-submit-bg-color);
     border: var(--form-border-style) var(--form-submit-bg-color);
     border-radius: var(--form-border-radius);
     padding: var(--form-input-padding);
     color: var(--form-submit-color);
+}
+
+small.error {
+    display: block;
+    padding: 0;
+    margin: 0;
+    color: var(--form-error-color);
+}
+
+small {
+    display: none;
 }
